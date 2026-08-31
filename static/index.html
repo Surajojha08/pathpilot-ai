@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="PathPilot AI personalized learning path recommender"><title>PathPilot AI</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand"><div class="logo">P</div><div><b>PathPilot</b><small>AI Learning Navigator</small></div></div>
+  <nav>
+    <button class="nav active" data-view="dashboard">◈ Dashboard</button>
+    <button class="nav" data-view="roadmap">⌁ Learning Path</button>
+    <button class="nav" data-view="chat">◌ AI Assistant</button>
+    <button class="nav" data-view="profile">◎ Learner Profile</button>
+  </nav>
+  <div class="side-note"><b>Adaptive engine</b><p>Recommendations combine semantic matching, prerequisites, learner level, interests, preferences and progress.</p></div>
+</aside>
+<main>
+<header><div><span class="eyebrow">PERSONALIZED LEARNING</span><h1 id="pageTitle">Your learning dashboard</h1></div><div class="status"><span></span><span id="engineStatus">Local hybrid engine</span></div></header>
+
+<section id="dashboard" class="view active">
+  <div class="hero"><div><span class="pill">AI-powered • adaptive • explainable</span><h2>Turn your goal into a <em>clear path.</em></h2><p>Describe where you want to go. PathPilot maps skill gaps, resolves prerequisites, ranks resources and adapts the roadmap from progress and assessment signals.</p><button class="primary" onclick="show('chat')">Build my path →</button></div><div class="orbit"><div class="center">GOAL</div><i>Profile</i><i>Skills</i><i>Path</i><i>Feedback</i></div></div>
+  <div class="grid stats"><div class="card"><span>TARGET</span><strong id="target">—</strong><small>Career pathway</small></div><div class="card"><span>PROGRESS</span><strong id="progress">0%</strong><small>Completed roadmap items</small></div><div class="card"><span>SKILL GAPS</span><strong id="gaps">0</strong><small>Priority areas</small></div><div class="card"><span>TIME</span><strong id="hours">7h/wk</strong><small>Remaining estimate below</small></div></div>
+  <div class="grid two"><div class="card next-card"><div class="card-head"><div><span>UP NEXT</span><h3 id="nextTitle">Build your profile</h3></div><span class="match" id="match">—</span></div><p id="nextReason">Use the AI assistant or learner profile to generate a personalized plan.</p><div class="actions"><button class="textbtn" onclick="show('roadmap')">View pathway →</button><button class="tiny" onclick="markNextComplete()">Mark complete</button></div></div>
+  <div class="card"><span>ADAPTIVE SIGNALS</span><h3 id="signalTitle">Ready to personalize</h3><p id="signalText">Complete resources or submit assessment scores. The next roadmap refresh uses these signals to change mastery and recommendations.</p><div class="meter"><div id="meterBar"></div></div></div></div>
+  <div class="grid two"><div class="card"><span>SKILL MASTERY</span><div id="mastery" class="mastery"></div></div><div class="card"><span>MILESTONES</span><div id="milestones" class="milestones"></div></div></div>
+</section>
+
+<section id="roadmap" class="view"><div class="section-head"><div><span class="eyebrow">YOUR ROADMAP</span><h2 id="roadmapGoal">Personalized learning path</h2><p id="roadmapMeta" class="muted"></p></div><button class="ghost" onclick="show('profile')">Edit profile</button></div><div id="roadmapContent" class="timeline"></div></section>
+
+<section id="chat" class="view"><div class="chat-wrap"><div class="chat-head"><div class="avatar">✦</div><div><h2>PathPilot AI</h2><p>Learning strategist • profile-aware • explainable</p></div></div><div id="messages" class="messages"><div class="msg ai">Tell me your goal, current skills and previous learning. Example: “I know Java and basic SQL and want to become a backend developer.”</div></div><div class="quick"><button onclick="quick('I want to become a backend developer. I know Java and basic SQL.')">Backend</button><button onclick="quick('I want to become an AI/ML engineer. I know Python.')">AI / ML</button><button onclick="quick('I want to become a frontend developer. I know basic HTML and CSS.')">Frontend</button><button onclick="quick('I want to become a DevOps engineer. I know Linux.')">DevOps</button></div><div class="composer"><input id="chatInput" placeholder="Describe your goal, skills or question…" onkeydown="if(event.key==='Enter')send()"><button class="primary" onclick="send()">Send</button></div></div></section>
+
+<section id="profile" class="view"><div class="section-head"><div><span class="eyebrow">LEARNER MODEL</span><h2>Tell PathPilot about you</h2><p class="muted">These signals personalize ranking and the learning timeline.</p></div><button class="primary" onclick="saveProfile()">Save & generate</button></div>
+<div class="profile-grid"><div class="card form"><label>Goal<select id="goal"><option>Backend Developer</option><option>AI/ML Engineer</option><option>Frontend Developer</option><option>DevOps Engineer</option></select></label><label>Experience<select id="experience"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label><label>Interests<input id="interests" placeholder="e.g. AI, backend, cloud"></label><label>Current skills<input id="skills" placeholder="e.g. Java, SQL"></label><label>Completed courses/resources<input id="completed" placeholder="e.g. Java OOP, SQL Foundations"></label><label>Learning preference<select id="preference"><option>Balanced</option><option>Hands On</option><option>Project Focused</option><option>Short Sessions</option></select></label><label>Hours per week<input id="hoursInput" type="number" min="1" max="80" value="7"></label></div><div class="card profile-preview"><span>PROFILE SIGNALS</span><h3>How personalization works</h3><ul><li><b>Goal</b> selects the competency map.</li><li><b>Skills</b> remove already-known gaps.</li><li><b>Experience</b> changes difficulty fit.</li><li><b>Interests</b> improve semantic relevance.</li><li><b>Preference</b> influences resource type.</li><li><b>Progress</b> updates mastery and next action.</li></ul></div></div></section>
+</main></div>
+<script src="/static/app.js"></script>
+</body></html>

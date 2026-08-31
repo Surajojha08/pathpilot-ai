@@ -1,0 +1,360 @@
+[
+  {
+    "id": "java-101",
+    "title": "Java & OOP Foundations",
+    "type": "Course",
+    "skill": "Java",
+    "level": "Beginner",
+    "hours": 10,
+    "tags": [
+      "backend",
+      "java",
+      "programming"
+    ],
+    "prerequisites": [],
+    "rating": 4.8,
+    "url": "https://dev.java/learn/"
+  },
+  {
+    "id": "sql-101",
+    "title": "SQL Foundations",
+    "type": "Course",
+    "skill": "SQL",
+    "level": "Beginner",
+    "hours": 8,
+    "tags": [
+      "backend",
+      "data",
+      "database"
+    ],
+    "prerequisites": [],
+    "rating": 4.8,
+    "url": "https://www.postgresql.org/docs/current/tutorial.html"
+  },
+  {
+    "id": "rest-api",
+    "title": "REST API Fundamentals",
+    "type": "Course",
+    "skill": "REST APIs",
+    "level": "Beginner",
+    "hours": 6,
+    "tags": [
+      "backend",
+      "web",
+      "api"
+    ],
+    "prerequisites": [
+      "SQL"
+    ],
+    "rating": 4.7,
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/REST"
+  },
+  {
+    "id": "springboot",
+    "title": "Spring Boot Backend Development",
+    "type": "Course",
+    "skill": "Spring Boot",
+    "level": "Intermediate",
+    "hours": 12,
+    "tags": [
+      "backend",
+      "java",
+      "spring"
+    ],
+    "prerequisites": [
+      "Java",
+      "REST APIs"
+    ],
+    "rating": 4.9,
+    "url": "https://spring.io/guides"
+  },
+  {
+    "id": "jpa",
+    "title": "Spring Data JPA & Hibernate",
+    "type": "Course",
+    "skill": "JPA/Hibernate",
+    "level": "Intermediate",
+    "hours": 9,
+    "tags": [
+      "backend",
+      "java",
+      "database"
+    ],
+    "prerequisites": [
+      "Spring Boot",
+      "SQL"
+    ],
+    "rating": 4.8,
+    "url": "https://spring.io/projects/spring-data-jpa"
+  },
+  {
+    "id": "docker",
+    "title": "Docker for Developers",
+    "type": "Course",
+    "skill": "Docker",
+    "level": "Intermediate",
+    "hours": 7,
+    "tags": [
+      "devops",
+      "backend",
+      "deployment"
+    ],
+    "prerequisites": [],
+    "rating": 4.7,
+    "url": "https://docs.docker.com/get-started/"
+  },
+  {
+    "id": "system-design",
+    "title": "System Design Essentials",
+    "type": "Course",
+    "skill": "System Design",
+    "level": "Advanced",
+    "hours": 14,
+    "tags": [
+      "backend",
+      "architecture",
+      "scalability"
+    ],
+    "prerequisites": [
+      "REST APIs",
+      "Docker"
+    ],
+    "rating": 4.8,
+    "url": "https://github.com/donnemartin/system-design-primer"
+  },
+  {
+    "id": "backend-project",
+    "title": "Capstone: Production-Ready Task API",
+    "type": "Project",
+    "skill": "Backend Engineering",
+    "level": "Intermediate",
+    "hours": 16,
+    "tags": [
+      "backend",
+      "java",
+      "spring",
+      "api",
+      "project"
+    ],
+    "prerequisites": [
+      "Spring Boot",
+      "JPA/Hibernate",
+      "Docker"
+    ],
+    "rating": 5.0,
+    "url": "https://spring.io/guides"
+  },
+  {
+    "id": "python",
+    "title": "Python Programming Essentials",
+    "type": "Course",
+    "skill": "Python",
+    "level": "Beginner",
+    "hours": 10,
+    "tags": [
+      "python",
+      "programming",
+      "ai"
+    ],
+    "prerequisites": [],
+    "rating": 4.8,
+    "url": "https://docs.python.org/3/tutorial/"
+  },
+  {
+    "id": "ml",
+    "title": "Machine Learning Fundamentals",
+    "type": "Course",
+    "skill": "Machine Learning",
+    "level": "Intermediate",
+    "hours": 14,
+    "tags": [
+      "ai",
+      "ml",
+      "data"
+    ],
+    "prerequisites": [
+      "Python"
+    ],
+    "rating": 4.9,
+    "url": "https://scikit-learn.org/stable/getting_started.html"
+  },
+  {
+    "id": "deep-learning",
+    "title": "Deep Learning with PyTorch",
+    "type": "Course",
+    "skill": "Deep Learning",
+    "level": "Advanced",
+    "hours": 18,
+    "tags": [
+      "ai",
+      "ml",
+      "deep learning"
+    ],
+    "prerequisites": [
+      "Machine Learning"
+    ],
+    "rating": 4.9,
+    "url": "https://pytorch.org/tutorials/"
+  },
+  {
+    "id": "llm",
+    "title": "Generative AI & LLM Applications",
+    "type": "Course",
+    "skill": "Generative AI",
+    "level": "Advanced",
+    "hours": 12,
+    "tags": [
+      "ai",
+      "llm",
+      "generative ai"
+    ],
+    "prerequisites": [
+      "Machine Learning"
+    ],
+    "rating": 4.9,
+    "url": "https://huggingface.co/learn"
+  },
+  {
+    "id": "rag-project",
+    "title": "Project: Build a RAG Learning Assistant",
+    "type": "Project",
+    "skill": "Generative AI",
+    "level": "Advanced",
+    "hours": 20,
+    "tags": [
+      "ai",
+      "llm",
+      "rag",
+      "project"
+    ],
+    "prerequisites": [
+      "Generative AI"
+    ],
+    "rating": 5.0,
+    "url": "https://huggingface.co/learn"
+  },
+  {
+    "id": "html-css",
+    "title": "HTML & CSS Foundations",
+    "type": "Course",
+    "skill": "HTML/CSS",
+    "level": "Beginner",
+    "hours": 8,
+    "tags": [
+      "frontend",
+      "web",
+      "design"
+    ],
+    "prerequisites": [],
+    "rating": 4.7,
+    "url": "https://developer.mozilla.org/en-US/docs/Learn"
+  },
+  {
+    "id": "javascript",
+    "title": "Modern JavaScript",
+    "type": "Course",
+    "skill": "JavaScript",
+    "level": "Intermediate",
+    "hours": 12,
+    "tags": [
+      "frontend",
+      "web",
+      "javascript"
+    ],
+    "prerequisites": [
+      "HTML/CSS"
+    ],
+    "rating": 4.8,
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "id": "react",
+    "title": "React Application Development",
+    "type": "Course",
+    "skill": "React",
+    "level": "Intermediate",
+    "hours": 14,
+    "tags": [
+      "frontend",
+      "react",
+      "web"
+    ],
+    "prerequisites": [
+      "JavaScript"
+    ],
+    "rating": 4.9,
+    "url": "https://react.dev/learn"
+  },
+  {
+    "id": "frontend-project",
+    "title": "Project: Responsive Analytics Dashboard",
+    "type": "Project",
+    "skill": "Frontend Engineering",
+    "level": "Intermediate",
+    "hours": 14,
+    "tags": [
+      "frontend",
+      "react",
+      "project"
+    ],
+    "prerequisites": [
+      "React"
+    ],
+    "rating": 5.0,
+    "url": "https://react.dev/learn"
+  },
+  {
+    "id": "linux",
+    "title": "Linux & Command Line",
+    "type": "Course",
+    "skill": "Linux",
+    "level": "Beginner",
+    "hours": 7,
+    "tags": [
+      "devops",
+      "linux",
+      "cloud"
+    ],
+    "prerequisites": [],
+    "rating": 4.7,
+    "url": "https://ubuntu.com/tutorials/command-line-for-beginners"
+  },
+  {
+    "id": "cicd",
+    "title": "CI/CD with GitHub Actions",
+    "type": "Course",
+    "skill": "CI/CD",
+    "level": "Intermediate",
+    "hours": 8,
+    "tags": [
+      "devops",
+      "deployment",
+      "github"
+    ],
+    "prerequisites": [
+      "Linux",
+      "Docker"
+    ],
+    "rating": 4.8,
+    "url": "https://docs.github.com/en/actions"
+  },
+  {
+    "id": "cloud",
+    "title": "Cloud Deployment Fundamentals",
+    "type": "Course",
+    "skill": "Cloud",
+    "level": "Intermediate",
+    "hours": 10,
+    "tags": [
+      "devops",
+      "cloud",
+      "deployment"
+    ],
+    "prerequisites": [
+      "Docker",
+      "Linux"
+    ],
+    "rating": 4.8,
+    "url": "https://aws.amazon.com/getting-started/"
+  }
+]
